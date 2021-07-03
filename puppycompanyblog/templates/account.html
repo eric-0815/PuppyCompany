@@ -8,7 +8,7 @@
   </div>
   
   <div class="container">
-      <form method="POST">
+      <form method="POST" action="" enctype="multipart/form-data"> <!--for change profile pictures -->
         {{form.hidden_tag()}}
         <div class="form-group">
           {{form.username.label(class='form-group')}}
@@ -25,12 +25,7 @@
         <div class="form-group">
           {{form.submit(class='btn btn-primary')}}
         </div>
-
-        
-        
       </form>
   </div>
-
-
 
 {% endblock %}
