@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <form method="POST">
+    {{form.hidden_tag()}} <!-- to make sure we can accept this  -->
+    {{form.email.label}}{{form.email}}<br> <!-- get the form's label and component  -->
+    {{form.password.label}}{{form.password}}<br>
+    {{form.submit()}}
+  </form>
+{% endblock %}
